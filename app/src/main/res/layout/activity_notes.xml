@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_marginTop="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Note Title"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Note Information"
+            android:background="@drawable/edittext_bg"
+            android:minLines="5"
+            android:inputType="textMultiLine"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:text="Save Note" />
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:text="Home" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#A513CD"
+            android:text="Notes:"
+            android:paddingLeft="8dp"/>
+
+        <ScrollView
+            android:id="@+id/notesScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/notesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical" />
+        </ScrollView>
+</LinearLayout>
