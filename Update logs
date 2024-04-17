@@ -1,0 +1,9 @@
+Created two new files on 12/14/23 to add links for easy access, along with updating the change log
+
+V1.1 removed conversion from Inches to cm and refactored everything into cm to make measurements easier
+
+Local databases are just lists to make life easy
+
+changed ai into an API instead, ai does not work offline in this case
+
+V2 has an apk in the works
